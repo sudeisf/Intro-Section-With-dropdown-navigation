@@ -1,1 +1,102 @@
- 
+@import "_config";
+
+//for all the boxs
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+   background-color:$nutral-white-color;
+   font-family: $font-family;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1em;
+    background-color: $nutral-white-color;
+    //gap: 5px;
+    & .menu-lists{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+        & h1{
+            font-size: 2rem;
+        }
+        & ul{
+            display: flex;
+            gap: 1rem;
+            & li{
+                list-style: none;
+            }
+        }
+    }
+    & .signing{
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
+        & button{
+            padding:0;
+            margin: 0;
+        }
+    }
+}
+.container{
+    display: flex;
+    padding-top: 2rem;
+    //padding: 3rem;
+    justify-content: space-around;
+
+    & .left-note{
+       display: grid;
+      // width:;
+       padding: 6rem;
+       background-color: red;
+        & h1{
+            font-size:5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        & .para {
+            display: flex;
+            flex-wrap: wrap;
+
+            //width: 0px;
+
+            & p {
+            font-size: $font-size-pargraph;
+            line-height: 1.6rem;
+            margin-bottom: 10px;
+            }
+        }
+       
+        & button{
+            
+        }
+        & .sponsers{
+            & ul{
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 2rem;
+                & li{
+                    list-style: none;
+                }
+            }
+        }
+    }
+
+    // margin-left: auto;
+    // margin-right: auto;
+    & .right-picture {
+        width: fit-content;
+        & img{
+            width: 380px;
+            height: 500px;
+        }
+    }
+
+}

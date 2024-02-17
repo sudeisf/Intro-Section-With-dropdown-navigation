@@ -6,7 +6,9 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="/dist/css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600&display=swap">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -15,22 +17,74 @@
   </style>
 </head>
 <body>
+<nav class="nav-bar">
+    <div class="menu-lists">
+      <div class="header">
+        <h1>snap</h1>
+      </div>
 
-  Features
-  Company
-  Careers
-  About
+        <ul>
+          <li>
+            <select id="myDropdown" name="myDropdown" >
+              <option value="" disabled selected>Features</option>
+            <option value="option1">Todo List</option>
+            <option value="option2">Calander</option>
+            <option value="option3">Reminders</option>
+            <option value="option4">Planning</option>
 
-  Login
-  Register
+          </select>
+        </li>
+          <li>
+            <select id="myDropdown" name="myDropdown">
+              <option value="" disabled selected>Company</option>
+              <option value="option1">History</option>
+              <option value="option2">Our Team</option>
+              <option value="option3">Blog</option>
+            </select>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+    </div>
+    <div class="signing">
+      <button>Login</button>
+      <button>Register</button>
+    </div>
+</nav>
+<main class="container">
 
-  Make remote work
+  <div class="left-note">
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
+    <div class="hero-topic">
+      <h1 class="left-note-header">Make<br> remote work</h1>
+    </div>
 
-  Learn more
+    <div class="para">
+      <p class="left-note-paragraph">Get your team in sync, no matter your location.<br>Streamline processes,
+        create team rituals, and<br> watch productivity soar.</p>
+    </div>
+
+    <div class="learn-button">
+      <button>Learn more</button>
+    </div>
+     
   
+    <div class="sponsers">
+      <ul class="sponser-list">
+        <li><img src="/images/client-databiz.svg" alt=""></li>
+        <li><img src="/images/client-audiophile.svg" alt=""></li>
+        <li><img src="/images/client-meet.svg" alt=""></li>
+        <li><img src="/images/client-maker.svg" alt=""></li>
+      </ul>
+    </div>
+  </div>
+  <section class="right-picture">
+    <img src="/images/image-hero-desktop.png" alt="main-image">
+  </section>
+</main>
+
+
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
