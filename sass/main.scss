@@ -8,8 +8,9 @@
 
 
 body {
-   background-color:$nutral-white-color;
+  // background-color:hsl(0, 0%, 41%)r;
    font-family: $font-family;
+   background-color: $nutral-white-color;
 }
 
 .nav-bar{
@@ -25,11 +26,13 @@ body {
         align-items: center;
         gap: 3rem;
         & h1{
-            font-size: 2rem;
+            font-size: 2.5rem;
+            font-weight: 900;
+            padding-left: 2rem;
         }
         & ul{
             display: flex;
-            gap: 1rem;
+            gap: 2rem;
             & li{
                 list-style: none;
             }
@@ -39,64 +42,199 @@ body {
         display: flex;
         justify-content: space-around;
         gap: 1rem;
+        //padding-bottom:1rem ;
         & button{
-            padding:0;
-            margin: 0;
-        }
-    }
-}
-.container{
-    display: flex;
-    padding-top: 2rem;
-    //padding: 3rem;
-    justify-content: space-around;
-
-    & .left-note{
-       display: grid;
-      // width:;
-       padding: 6rem;
-       background-color: red;
-        & h1{
-            font-size:5rem;
+            padding:4px 1rem;
+            border-radius: 1rem;
+            background-color: $nutral-white-color;
             font-weight: 700;
-            margin-bottom: 10px;
         }
-        & .para {
-            display: flex;
-            flex-wrap: wrap;
+        & .b1{
+            border: none;
+            font-size: 1.2rem;
+            color: $neutral-Gray;
+            font-weight: 700;
 
-            //width: 0px;
-
-            & p {
-            font-size: $font-size-pargraph;
-            line-height: 1.6rem;
-            margin-bottom: 10px;
-            }
+        }
+        & .b1:hover {
+            color: $neutral-black;
+            font-weight: 700;
         }
        
-        & button{
-            
+        & .b2{
+            border: solid 2px $neutral-Gray;
+            font-size: 1rem;
+            color: $neutral-Gray;
+            font-weight: 700;
         }
-        & .sponsers{
-            & ul{
-                display: flex;
-                justify-content: space-evenly;
-                margin-top: 2rem;
-                & li{
-                    list-style: none;
-                }
-            }
+        & .b2:hover {
+             color: $neutral-black;
+            border: solid 2px $neutral-black;
+            font-weight: 700;
+        }
+    }
+}
+
+
+.container{
+    display: flex;
+    gap: 12rem;
+    margin-left: 10rem;
+    margin-top: 1rem;
+    background-color: $nutral-white-color;
+   // margin-top: 2.5rem;
+    & .right-picture{
+        & img{
+            width: 500px;
+            height: 640px;
         }
     }
 
-    // margin-left: auto;
-    // margin-right: auto;
-    & .right-picture {
-        width: fit-content;
-        & img{
-            width: 380px;
-            height: 500px;
+    & .left-note{
+        display: flex;
+        flex-direction: column;
+        padding-top: 6rem;
+       // margin-left: rem;
+        //margin-right: 4rem;
+        & h1 {
+            font-size: 5rem;
+            padding-bottom: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+           //\ padding-top: 10rem;
         }
+        & p {
+            font-size: $font-size-pargraph;
+            padding-bottom: 3rem;
+            line-height: 1.7rem;
+            font-weight: 500;
+
+
+        }
+        & button {
+            background-color: $neutral-black;
+            color: $nutral-white-color;
+            padding: 0.7rem 1.6rem 0.7rem 1.6rem;
+            border-radius: 15px;
+            margin-bottom: 9rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        & button:hover{
+                background-color: $nutral-white-color;
+                color: $neutral-black;
+                border: 2px solid $neutral-black;
+        }
+        & ul{
+            display: flex;
+            gap: 2rem;
+            & li {
+                list-style: none;
+
+            }
+        }
+        }
+    }
+
+
+#myDropdown  {
+        position: relative;
+
+
+    & button {
+        background-color: $nutral-white-color;
+        border:none;
+        text-transform: capitalize;
+        font-size: 18px;
+       // text-align: center;
+        align-items: center;
+        & img{
+            padding: 3px;
+            margin-left: 2px
+        };
+    }
+    & #drop-content{
+        display: none;
+        //transition: 600ms;
+        flex-direction:column;
+        background-color: white;
+        box-shadow: -2px 3px 26px -9px hsl(0, 0%, 41%);
+        //box-shadow: 1px 1px 1px 2px $neutral-Gray;
+       padding: 1rem 1.5rem 0.8rem 1.5rem;
+        //border: 1px solid #000;
+        border-radius: 10px;
+        gap: 0.4rem;
+        position: absolute;
+        top: 2rem;
+        left: -2rem;
+        width: max-content;
+      // width: ;
+       // height: 4.12rem;
+    }
+    & a{
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 700;
+        color: $neutral-Gray;
+        //padding: ;
+        & img {
+            margin-right: 1rem;
+           //s display: flex;
+        }
+        //word-spacing: 10px;
     }
 
 }
+#myDropdown2 {
+    position: relative;
+
+
+    & button {
+        background-color: $nutral-white-color;
+        border: none;
+        text-transform: capitalize;
+        font-size: 18px;
+        // text-align: center;
+        align-items: center;
+
+        & img {
+            padding: 3px;
+            margin-left: 2px
+        }
+
+        ;
+    }
+
+    & #drop-content2 {
+        display: none;
+        //transition: 600ms;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: -2px 3px 26px -9px hsl(0, 0%, 41%);
+        //box-shadow: 1px 1px 1px 2px $neutral-Gray;
+        padding: 1.6rem 1.4rem 1.6rem 1.4rem;
+        //border: 1px solid #000;
+        border-radius: 10px;
+        gap: 0.5rem;
+        position: absolute;
+        top: 2rem;
+        left: 1rem;
+        width: max-content;
+        // width: ;
+        // height: 4.12rem;
+    }
+
+    & a {
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 700;
+        color: $neutral-Gray;
+    }
+
+}
+
+.ho:hover{
+    color: black;
+    font-weight: 700;
+}
+

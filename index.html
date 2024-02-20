@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="/dist/css/main.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600&display=swap">
+  <script src="/JS/main.js" defer></script>
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
 
@@ -25,30 +26,35 @@
 
         <ul>
           <li>
-            <select id="myDropdown" name="myDropdown" >
-              <option value="" disabled selected>Features</option>
-            <option value="option1">Todo List</option>
-            <option value="option2">Calander</option>
-            <option value="option3">Reminders</option>
-            <option value="option4">Planning</option>
-
-          </select>
+            <div id="myDropdown">
+                 <button id="dropdown-b1">features <img id ="close" src="/images/icon-arrow-down.svg" alt=""></button>
+                 <div id="drop-content">
+                  <a href="#"><img src="/images/icon-todo.svg">Todo List</a>
+                  <a href="#"><img src="/images/icon-calendar.svg">Calander</a>
+                  <a href="#"><img src="/images/icon-reminders.svg">Reminder</a>
+                  <a href="#"><img src="/images/icon-planning.svg">Planning</a>
+                 </div>
+            </div>
         </li>
           <li>
-            <select id="myDropdown" name="myDropdown">
-              <option value="" disabled selected>Company</option>
-              <option value="option1">History</option>
-              <option value="option2">Our Team</option>
-              <option value="option3">Blog</option>
-            </select>
+
+            <div id="myDropdown2">
+              <button id="dropdown-b2">Company<img id="close2" src="/images/icon-arrow-down.svg" alt=""></button>
+              <div id="drop-content2">
+                <a href="#">History</a>
+                <a href="#">Our Team</a>
+                <a href="#">Blog</a>
+              </div>
+            </div>
+
           </li>
-          <li>Careers</li>
-          <li>About</li>
+          <li class="ho">Careers</li>
+          <li class="ho">About</li>
         </ul>
     </div>
     <div class="signing">
-      <button>Login</button>
-      <button>Register</button>
+      <button class="b1">Login</button>
+      <button class="b2">Register</button>
     </div>
 </nav>
 <main class="container">
@@ -84,10 +90,10 @@
 </main>
 
 
-
+<!-- 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>

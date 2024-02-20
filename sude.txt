@@ -1,0 +1,57 @@
+
+// .container{
+    display: flex;
+    padding-top: 2rem;
+    //padding: 3rem;
+    //justify-content: space-around;
+    gap:16em;
+    align-items: center;
+    justify-content: center;
+
+    & .left-note{
+       display: flex
+      // width:;
+     //padding: 2rem;
+       background-color: red;
+        & h1{
+            font-size:5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        & .para {
+            display: flex;
+            flex-wrap: wrap;
+
+            //width: 0px;
+
+            & p {
+            font-size: $font-size-pargraph;
+            line-height: 1.6rem;
+            margin-bottom: 10px;
+            }
+        }
+       
+        & button{
+            
+        }
+        & .sponsers{
+            & ul{
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 2rem;
+                & li{
+                    list-style: none;
+                }
+            }
+        }
+    }
+
+    // margin-left: auto;
+    // margin-right: auto;
+    & .right-picture {
+        width: fit-content;
+        & img{
+            width: 380px;
+            height: 500px;
+        }
+    }

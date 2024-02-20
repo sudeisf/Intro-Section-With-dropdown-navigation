@@ -4,8 +4,8 @@
 }
 
 body {
-  background-color: hsl(0, 0%, 98%);
   font-family: "Epilogue";
+  background-color: hsl(0, 0%, 98%);
 }
 
 .nav-bar {
@@ -22,11 +22,13 @@ body {
   gap: 3rem;
 }
 .nav-bar .menu-lists h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+  padding-left: 2rem;
 }
 .nav-bar .menu-lists ul {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 .nav-bar .menu-lists ul li {
   list-style: none;
@@ -37,46 +39,155 @@ body {
   gap: 1rem;
 }
 .nav-bar .signing button {
-  padding: 0;
-  margin: 0;
+  padding: 4px 1rem;
+  border-radius: 1rem;
+  background-color: hsl(0, 0%, 98%);
+  font-weight: 700;
+}
+.nav-bar .signing .b1 {
+  border: none;
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 41%);
+  font-weight: 700;
+}
+.nav-bar .signing .b1:hover {
+  color: hsl(0, 0%, 8%);
+  font-weight: 700;
+}
+.nav-bar .signing .b2 {
+  border: solid 2px hsl(0, 0%, 41%);
+  font-size: 1rem;
+  color: hsl(0, 0%, 41%);
+  font-weight: 700;
+}
+.nav-bar .signing .b2:hover {
+  color: hsl(0, 0%, 8%);
+  border: solid 2px hsl(0, 0%, 8%);
+  font-weight: 700;
 }
 
 .container {
   display: flex;
-  padding-top: 2rem;
-  justify-content: space-around;
+  gap: 12rem;
+  margin-left: 10rem;
+  margin-top: 1rem;
+  background-color: hsl(0, 0%, 98%);
+}
+.container .right-picture img {
+  width: 500px;
+  height: 640px;
 }
 .container .left-note {
-  display: grid;
-  padding: 6rem;
-  background-color: red;
+  display: flex;
+  flex-direction: column;
+  padding-top: 6rem;
 }
 .container .left-note h1 {
   font-size: 5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: 700;
-  margin-bottom: 10px;
 }
-.container .left-note .para {
-  display: flex;
-  flex-wrap: wrap;
-}
-.container .left-note .para p {
+.container .left-note p {
   font-size: 18px;
-  line-height: 1.6rem;
-  margin-bottom: 10px;
+  padding-bottom: 3rem;
+  line-height: 1.7rem;
+  font-weight: 500;
 }
-.container .left-note .sponsers ul {
+.container .left-note button {
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  padding: 0.7rem 1.6rem 0.7rem 1.6rem;
+  border-radius: 15px;
+  margin-bottom: 9rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.container .left-note button:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+  border: 2px solid hsl(0, 0%, 8%);
+}
+.container .left-note ul {
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 2rem;
+  gap: 2rem;
 }
-.container .left-note .sponsers ul li {
+.container .left-note ul li {
   list-style: none;
 }
-.container .right-picture {
-  width: fit-content;
+
+#myDropdown {
+  position: relative;
 }
-.container .right-picture img {
-  width: 380px;
-  height: 500px;
+#myDropdown button {
+  background-color: hsl(0, 0%, 98%);
+  border: none;
+  text-transform: capitalize;
+  font-size: 18px;
+  align-items: center;
+}
+#myDropdown button img {
+  padding: 3px;
+  margin-left: 2px;
+}
+#myDropdown #drop-content {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: -2px 3px 26px -9px hsl(0, 0%, 41%);
+  padding: 1rem 1.5rem 0.8rem 1.5rem;
+  border-radius: 10px;
+  gap: 0.4rem;
+  position: absolute;
+  top: 2rem;
+  left: -2rem;
+  width: max-content;
+}
+#myDropdown a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  color: hsl(0, 0%, 41%);
+}
+#myDropdown a img {
+  margin-right: 1rem;
+}
+
+#myDropdown2 {
+  position: relative;
+}
+#myDropdown2 button {
+  background-color: hsl(0, 0%, 98%);
+  border: none;
+  text-transform: capitalize;
+  font-size: 18px;
+  align-items: center;
+}
+#myDropdown2 button img {
+  padding: 3px;
+  margin-left: 2px;
+}
+#myDropdown2 #drop-content2 {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: -2px 3px 26px -9px hsl(0, 0%, 41%);
+  padding: 1.6rem 1.4rem 1.6rem 1.4rem;
+  border-radius: 10px;
+  gap: 0.5rem;
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+  width: max-content;
+}
+#myDropdown2 a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  color: hsl(0, 0%, 41%);
+}
+
+.ho:hover {
+  color: black;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
